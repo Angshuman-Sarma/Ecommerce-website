@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            width: 100vw;
+            margin:0;
+    }
+    
+    .login-form {
+        width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input[type="text"], input[type="password"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+       </style>
+</head>
+<body>
+
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <input type="text" name="uname" placeholder="Enter your name">
+            <input type="password" name="upass" placeholder="Enter your password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>

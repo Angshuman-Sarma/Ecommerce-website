@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Our E-Commerce Website</title>
+    <style>
+       body{
+        background-image: url(shared/background/abstractwlcmbg.png);
+        margin: 0;
+        font-family: sans-serif;
+        background-size: cover;
+       }
+
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color:none;
+        }
+
+        .landing-page img {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            /* color: #333; */
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            /* color: #666; */
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        .login-btn,
+        .register-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .aboutus-btn {
+            background-color: #a0a4fd;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover,
+        .register-btn:hover {
+            background-color: #3e8e41;
+        }
+
+        .aboutus-btn:hover {
+            background-color: #7d81f9;
+        }
+    </style>
+</head>
+
+<body >
+    <!-- <img src="abstractwlcmbg.png" alt="" class="bgimg"> -->
+    <div class="bgimg">
+        <div class="landing-page" >
+            <h1>Welcome to E-Shopping Website</h1>
+            <p>A place where buyers and sellers connect to buy and sell products.</p>
+            <p>Learn more about the project and about it's working and functionalities in the <a
+                    href="shared/aboutus.html"><button class="aboutus-btn">About us</button></a> section.</p>
+            <p>Get started by registering yourself first</p>
+            <div class="buttons">
+                <a href="shared/registration.html"><button class="register-btn">Register</button></a>
+                <a href="shared/login.html"><button class="login-btn">Login</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

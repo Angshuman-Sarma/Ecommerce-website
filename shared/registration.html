@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Register yourself</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 400px;
+            /* margin: 50px auto; */
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            /* Green */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+            /* Darker green on hover */
+        }
+        .radi{
+            display: flex;
+            /* justify-content: center; */
+            align-items: flex-start;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h2>Registration</h2>
+        <form action="registration.php" method="post" onsubmit="return sub()">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="uname" required>
+            </div>
+            <div class="input-group">
+                <label for="upass">Password:</label>
+                <input type="password" id="pass1" name="upass" required>
+            </div>
+            <div class="input-group">
+                <label for="upass">Confirm Password:</label>
+                <input type="password" id="pass2" name="upass" required>
+            </div>
+
+            <div class="input-group radi">
+                <input type="radio"  name="utype" value="customer">
+                <label for="customer">Customer</label>
+                
+                <input type="radio"  name="utype" value="vendor">
+                <label for="vendor">Vendor</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script>
+
+        function sub(){
+            pass1obj=document.getElementById('pass1');
+            pass2obj=document.getElementById('pass2');
+
+            if(pass1obj.value==pass2obj.value){
+                alert("registration success");
+                return true;
+            }
+            else{
+                alert("password did not matched");
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>
